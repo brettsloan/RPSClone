@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <!-- TITLE -->
+    <div class="title">
+      <h1>Rock, Paper, Scissors</h1>
+      <h1 id="roundsTitle">Round 1</h1>
+    </div>
+    <h1 id="outcomeTitle">Your Turn</h1>
+    <br>
+    <div id="goAgainButton"><h3>Pick Below</h3></div>
+
+    <!-- PLAYERS -->
+    <div class="players">
+      <div class="playerContainer">
+        <h1 id="player1" class="player1">Player 1</h1>
+        <h1 id="pointsP1">0/3</h1>
+        <div class="rpsWrapper">
+          <button onclick="" type="button" name="button" value="1"><img src="img/rock.png" alt=""></button>
+          <img class="hidden" data-index="1" src="img/rock.png" alt="Player Rock">
+          <button onclick="" type="button" name="button" value="2"><img src="img/paper.png" alt=""></button>
+          <img class="hidden" data-index="2" src="img/paper.png" alt="Player Paper">
+          <button onclick="" type="button" name="button" value="3"><img src="img/scissors.png" alt=""></button>
+          <img class="hidden" data-index="3" src="img/scissors.png" alt="Player Scissors">
+        </div>
+      </div>
+      <br>
+      <div class="playerContainer">
+        <h1 id="player2" class="player2">Opponent</h1>
+        <h1 id="pointsP2">0/3</h1>
+        <div class="rpsWrapper">
+          <!-- <h3>waiting on Opponent's Move</h3> -->
+          <button type="button" name="button" value="4"><img src="img/rock.png" alt=""></button>
+          <img class="hidden" data-index="4"src="img/rock.png" alt="Opponent Rock">
+          <button type="button" name="button" value="5"><img src="img/paper.png" alt=""></button>
+          <img class="hidden" data-index="5"src="img/paper.png" alt="Opponent Paper">
+          <button type="button" name="button" value="6"><img src="img/scissors.png" alt=""></button>
+          <img class="hidden" data-index="6"src="img/scissors.png" alt="Opponent Scissors">
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
